@@ -44,4 +44,4 @@ class DeviceDetector {
   }
 }
 
-module.exports = DeviceDetector;
+export default DeviceDetector;

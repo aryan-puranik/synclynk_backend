@@ -284,10 +284,39 @@ class ConnectionManager {
       });
     }
   }
+
+  getIO() {
+  const io = require('socket.io');
+  return io;
+}
+
+// Check if device is online
+isDeviceOnline(deviceId) {
+  const socket = this.getSocketById(deviceId);
+  return socket && socket.connected;
+}
+
+getDeviceConnectionInfo(deviceId) {
+  const connectionInfo = this.connections.get(deviceId);
+  if (!connectionInfo) return null;
+  
+  return {
+    deviceId,
+    sessionId: connectionInfo.sessionId,
+    connectedAt: connectionInfo.connectedAt,
+    lastActivity: connectionInfo.lastActivity,
+    deviceType: connectionInfo.deviceType,
+    isConnected: this.isDeviceOnline(deviceId)
+  };
+}
+
   
   getActiveConnectionCount() {
     return this.connections.size;
   }
 }
 
-module.exports = ConnectionManager;
+
+
+
+export default ConnectionManager;
