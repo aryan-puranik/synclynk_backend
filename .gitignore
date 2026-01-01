@@ -1,0 +1,214 @@
+# Node.js Backend - Git Ignore Rules
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# Runtime data
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Build outputs
+dist/
+build/
+.out/
+.next/
+.nuxt/
+.cache/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store?
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+*.tap
+
+# Documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Socket.IO debug
+socket.io-debug*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Parcel build directory
+dist
+.parcel-cache
+
+# Vercel
+.vercel
+
+# Docker
+docker-compose.override.yml
+
+# Temporary folders
+.temp/
+tmp/
+
+# Database files (if using SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Session files
+sessions/
+
+# Uploads directory (if handling file uploads)
+uploads/
+public/uploads/
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+
+# Backend specific
+# Session storage files
+*.session
+# Cache files
+.cache/
+# PM2 process files
+.pm2/
+# Redis dump files
+dump.rdb
+# MongoDB data directory
+data/db/
+# Elasticsearch data
+data/elasticsearch/
+
+# Project specific
+# QR code temporary files
+qr-temp/
+# Temporary clipboard files
+clipboard-temp/
+# WebRTC temporary files
+webrtc-temp/
+
+# Development only
+.dev/
+.development/
+
+# Production only
+.production/
+
+# Keep empty directories
+!.gitkeep
+
+# Custom (add your project-specific ignores below)
+# ===============================================
+
+# Universal Clipboard Backend Specific
+# Session data backups
+backups/
+# Performance logs
+perf-logs/
+# Analytics data
+analytics/
+# Temporary socket files
+.sock
+# WebRTC turn server config (if any)
+turnserver.conf
+# STUN/TURN server certificates
+turn_cert.pem
+turn_key.pem
+# Load test data
+load-test/
+# Benchmark results
+benchmarks/
+# Backup configuration files
+*.bak
+*.backup
+
+# Docker development
+docker-compose.dev.yml
+
+# Local development overrides
+config/local.js
+config/local.json
+config/*.local.*
+
+# API documentation generated
+api-docs/
+swagger.json
+
+# Performance profiling
+*.cpuprofile
+*.heapsnapshot
+
+# Security scans
+.security/
+
+# Migration files (if using database migrations)
+migrations/*.sql
