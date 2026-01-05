@@ -97,3 +97,5 @@ export class DeviceController {
     return !!session;
   }
 }
+
+export default DeviceController;

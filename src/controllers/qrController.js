@@ -149,3 +149,5 @@ export class QRController {
     }
   };
 }
+
+export default QRController;

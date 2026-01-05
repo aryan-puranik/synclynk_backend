@@ -1,6 +1,6 @@
 // src/routes/api/deviceRoutes.js
 import express from 'express';
-import { DeviceController } from '../../controllers/deviceController.js';
+import DeviceController  from '../../controllers/deviceController.js';
 import { SessionAuth } from '../../middleware/auth.js';
 
 export const createDeviceRoutes = (sessionManager) => {

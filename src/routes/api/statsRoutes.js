@@ -1,6 +1,6 @@
 // src/routes/api/statsRoutes.js
 import express from 'express';
-import { StatsController } from '../../controllers/statsController.js';
+import StatsController  from '../../controllers/statsController.js';
 import { validatePagination } from '../../middleware/validation.js';
 
 export const createStatsRoutes = (sessionManager, connectionManager, clipboardManager) => {

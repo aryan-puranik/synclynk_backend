@@ -1,3 +1,4 @@
+
 class ConnectionManager {
   constructor(sessionManager) {
     this.sessionManager = sessionManager;

@@ -1,7 +1,7 @@
 // src/routes/index.js
 import express from 'express';
 import apiRoutes from './api/index.js';
-import websocketRoutes from './websocketRoutes.js';
+import  websocketroutes from './websocketRoutes.js';
 
 const router = express.Router();
 

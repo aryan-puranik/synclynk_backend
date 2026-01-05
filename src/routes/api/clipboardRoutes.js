@@ -1,6 +1,6 @@
 // src/routes/api/clipboardRoutes.js
 import express from 'express';
-import { ClipboardController } from '../../controllers/clipboardController.js';
+import ClipboardController  from '../../controllers/clipboardController.js';
 import { SessionAuth } from '../../middleware/auth.js';
 import {
   validateClipboardData,

@@ -154,3 +154,5 @@ export class StatsController {
     };
   }
 }
+
+export default StatsController;

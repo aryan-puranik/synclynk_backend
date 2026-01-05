@@ -34,7 +34,4 @@ const validateSession = (sessionManager) => {
   };
 };
 
-module.exports = {
-  validateOrigin,
-  validateSession
-};
+export default {validateOrigin ,validateSession};

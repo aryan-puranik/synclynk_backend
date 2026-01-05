@@ -1,6 +1,6 @@
 // src/routes/api/sessionRoutes.js
 import express from 'express';
-import { SessionController } from '../../controllers/sessionController.js';
+import SessionController from '../../controllers/sessionController.js';
 import { SessionAuth } from '../../middleware/auth.js';
 import {
   validateCreateSession,

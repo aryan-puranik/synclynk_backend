@@ -7,6 +7,7 @@ import statsRoutes from './statsRoutes.js';
 import deviceRoutes from './deviceRoutes.js';
 import { apiLimiter } from '../../middleware/rateLimiter.js';
 
+
 const router = express.Router();
 
 // Apply rate limiting to all API routes

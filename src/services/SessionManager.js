@@ -1,5 +1,4 @@
-const { v4: uuidv4 } = require('uuid');
-
+import { v4 as uuidv4 } from 'uuid';
 class Session {
   constructor(id, maxDevices = 5) {
     this.id = id;

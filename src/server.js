@@ -20,6 +20,7 @@ import createStatsRoutes from './routes/api/statsRoutes.js';
 import createDeviceRoutes from './routes/api/deviceRoutes.js';
 import setupWebSocketRoutes from './routes/websocketRoutes.js';
 
+
 // Import middleware
 import { errorHandler } from './middleware/errorHandler.js';
 import { validateOrigin } from './middleware/validation.js';
